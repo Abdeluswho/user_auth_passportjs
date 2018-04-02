@@ -16,9 +16,13 @@ module.exports = {
     // apply loaders to files that meet given conditions
     rules: [
         // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-        { test: /\.tsx?$/, loader: "ts-loader", include: path.join(__dirname, '/client/src'), query: {
+        { 
+          test: /\.jsx?$/,
+          loader: "babel-loader", 
+          include: path.join(__dirname, '/client/src'), 
+          query: {
             presets: ["react", "es2015"]
-          } 
+            } 
         }
       ]
     // rules: [{
