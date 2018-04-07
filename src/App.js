@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import ReactDom from 'react-dom';
-
+import Button from 'material-ui/Button'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { browserHistory, BrowserRouter as Router, Route, } from 'react-router';
 
@@ -27,7 +27,11 @@ class App extends Component {
                   <HomePage/>
               </div>
           </div>
+          <Button variant="raised" color="primary">
+             Hello World
+          </Button>
         </div>
+
       
     );
   }
